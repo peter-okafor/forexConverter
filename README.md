@@ -39,7 +39,9 @@ Include the my-converter directive in your tag of choice
 
 Voila! Project ready!
 
+## Important
+Please note that we are using a dummy exchange rate.
 
 ## Dependencies
-angularjs 1
-Bootsrap 3
+1. Angularjs 1
+2. Bootsrap 3
