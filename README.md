@@ -5,7 +5,7 @@
 
 Download or clone the widget.
 
-## Usage example
+## Usage
 
 To get a quick view of what the widget can do, navigate to the sample folder and launch the index.html on any browser of your choice.
 
