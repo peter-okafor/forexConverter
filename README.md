@@ -15,8 +15,8 @@ To run the widget include the paths to bootstrap 3, the app.js file and angularj
 
 ```sh
 <script type="text/javascript" src="path/to/angularjs/angular.js"></script>
-	<script type="text/javascript" src="path/to/widget/app.js"></script>
-	<link rel="stylesheet" type="text/css" href="path/to/bootstrap/bootstrap.min.css">
+<script type="text/javascript" src="path/to/widget/app.js"></script>
+<link rel="stylesheet" type="text/css" href="path/to/bootstrap/bootstrap.min.css">
 ```
 
 Specify conversionWidget as your module in your html. In this example it is included in the html tag
@@ -34,7 +34,7 @@ Specify mainController as your controller in your html. In this example it is in
 Include the my-converter directive in your tag of choice
 
 ```sh
-<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12" my-converter></div>
+<div my-converter></div>
 ```
 
 Voila! Project ready!
