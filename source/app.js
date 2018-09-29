@@ -24,14 +24,27 @@ angular.module('conversionWidget', [])
 .directive('myConverter', function() {
   return {
     template:
-    '<label>Convert From</label>'+
-    '<select data-ng-model="fromCurrency" ng-init="fromCurrency = currencies[0]" ng-change="changeFromCurrency(); performCalculation()" data-ng-options="currency for currency in currencies">'+
-	'</select>'+
-	'<input type="number" ng-model="fromAmount" ng-change="performCalculation()">'+
-	'<label>To</label>'+
-	'<select data-ng-model="toCurrency" ng-change="changeToCurrency(); performCalculation()" data-ng-options="currency for currency in currencies">'+
-	'</select>'+
-	'<input type="text" ng-model="toAmount" readonly="readonly">'
+    '<div class="row">'+
+    	'<div>'+
+		    '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">'+
+			    '<label>Convert From</label>'+
+			    '<br>'+
+			    '<select style="border-radius:5px 0 0 5px" class="input-lg col-lg-5 col-md-5 col-sm-5 col-xs-5" data-ng-model="fromCurrency" ng-init="fromCurrency = currencies[0]" ng-change="changeFromCurrency(); performCalculation()" data-ng-options="currency for currency in currencies">'+
+				'</select>'+
+				'<input style="border-radius:unset" class="input-lg col-lg-7 col-md-7 col-sm-7 col-xs-7" type="number" ng-model="fromAmount" ng-change="performCalculation()">'+
+			'</div>'+
+			'<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">'+
+				'<label>To</label>'+
+				'<br>'+
+				'<select style="border-radius:5px 0 0 5px" class="input-lg col-lg-5 col-md-5 col-sm-5 col-xs-5" data-ng-model="toCurrency" ng-change="changeToCurrency(); performCalculation()" data-ng-options="currency for currency in currencies">'+
+				'</select>'+
+				'<input style="border-radius:unset" class="input-lg col-lg-7 col-md-7 col-sm-7 col-xs-7" type="text" ng-model="toAmount" readonly="readonly">'+
+			'</div>'+
+			'<div>'+
+			'<button class="center-block" style="border-radius:50%; border:none; padding:3%; background-color:rgba(166,162,162,0.2)">Go</button>'+
+			'</div>'+
+		'</div>'+
+	'</div>'
   };
 })
 .factory('rateCalculator', function() {
