@@ -39,6 +39,15 @@ Include the my-converter directive in your tag of choice
 
 Voila! Project ready!
 
+## Note
+To add more currencies modify the currencies scope
+
+```sh
+$scope.currencies = ['NGN', 'USD', 'EUR', 'GBP'];
+```
+
+Don't forget to include it's rate in the rateCalculator factory
+
 ## Important
 Please note that we are using a dummy exchange rate.
 
